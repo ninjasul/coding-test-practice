@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public class _04_QuickSearch {
 	public static void main(String[] args) {
-		int [] sortedArray = doQuickSort( new int[] { 10, 5, 2, 3 } );
+		int [] sortedArray = doQuickSort( new int[] { 10, 5, 2, 3, 4, 7, 8, 6 } );
 		
 		for( int i : sortedArray ) {
 			System.out.print(i + " ");
@@ -24,9 +24,11 @@ public class _04_QuickSearch {
 			
 			return IntStream
 					.concat(Arrays.stream(doQuickSort( lessArray )), 
-							IntStream.concat(
+								IntStream.concat(
 									IntStream.of(pivot), 
-									Arrays.stream(doQuickSort( greaterArray )))).toArray();
+									Arrays.stream(doQuickSort( greaterArray ))
+								)
+							).toArray();
 		}
 	}
 }
