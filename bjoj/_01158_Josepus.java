@@ -40,14 +40,10 @@ public class  _01158_Josepus {
 
         System.out.print("<");
         while( deque.size() > 1 ) {
-            for( int i = 1; i <= roundCnt; ++i ) {
-                if( i < roundCnt ) {
-                    deque.addLast(deque.removeFirst());
-                }
-                else {
-                    System.out.print(deque.removeFirst() + ", ");
-                }
+            for( int i = 1; i < roundCnt; ++i ) {
+                deque.addLast(deque.removeFirst());
             }
+            System.out.print(deque.removeFirst() + ", ");
         }
         System.out.println(deque.removeFirst() + ">");
     }
