@@ -1,4 +1,4 @@
-/*
+package _01.basic.ds;/*
 쇠막대기
 
 문제

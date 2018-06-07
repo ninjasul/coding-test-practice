@@ -1,4 +1,4 @@
-/*
+package _01.basic.math;/*
 GCD 합
 문제
 양의 정수 n개가 주어졌을 때,

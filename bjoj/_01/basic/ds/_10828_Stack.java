@@ -1,4 +1,4 @@
-package bjoj;
+package _01.basic.ds;
 
 import java.util.Scanner;
 import java.util.Stack;

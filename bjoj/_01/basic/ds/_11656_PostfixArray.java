@@ -1,4 +1,4 @@
-/*
+package _01.basic.ds;/*
 접미사 배열
 
 문제

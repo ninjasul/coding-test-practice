@@ -1,4 +1,4 @@
-/*
+package _01.basic.ds;/*
 네 수
 
 문제

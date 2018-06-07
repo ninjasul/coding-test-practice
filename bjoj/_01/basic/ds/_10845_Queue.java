@@ -1,4 +1,4 @@
-/**
+package _01.basic.ds; /**
  큐 성공
 
  문제

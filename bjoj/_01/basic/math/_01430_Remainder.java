@@ -1,4 +1,4 @@
-/*
+package _01.basic.math;/*
 나머지
 
 문제

@@ -1,4 +1,4 @@
-/*
+package _01.basic.math;/*
 2진수 8진수
 
 문제

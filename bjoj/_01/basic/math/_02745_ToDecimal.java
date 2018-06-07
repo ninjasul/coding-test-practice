@@ -1,4 +1,4 @@
-/*
+package _01.basic.math;/*
 진법 변환
 
 문제

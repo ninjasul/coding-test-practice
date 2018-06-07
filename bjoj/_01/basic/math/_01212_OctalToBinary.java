@@ -1,4 +1,4 @@
-/*
+package _01.basic.math;/*
 8진수 2진수 실패
 
 문제

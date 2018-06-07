@@ -1,4 +1,4 @@
-/*
+package _01.basic.ds;/*
 괄호
 
 문제

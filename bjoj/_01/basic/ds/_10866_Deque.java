@@ -1,4 +1,4 @@
-/**
+package _01.basic.ds; /**
  덱
 
  문제

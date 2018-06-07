@@ -1,4 +1,4 @@
-/**
+package _01.basic.ds; /**
  에디터
 
  문제
