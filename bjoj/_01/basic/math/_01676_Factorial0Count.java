@@ -28,7 +28,7 @@ public class _01676_Factorial0Count {
         System.out.println(getNumberOfZero(n));
     }
 
-    public static int getNumberOfZero( int n ) {
+    /*public static int getNumberOfZero( int n ) {
 
         int num2Cnt = 0;
         int num5Cnt = 0;
@@ -53,5 +53,13 @@ public class _01676_Factorial0Count {
         }
 
         return Math.min(num5Cnt, num2Cnt);
+    }*/
+
+    public static int getNumberOfZero( int n ) {
+        int result = 0;
+        for( int i = 5; i <= n; i*=5 ) {
+            result += n/i;
+        }
+        return result;
     }
 }
