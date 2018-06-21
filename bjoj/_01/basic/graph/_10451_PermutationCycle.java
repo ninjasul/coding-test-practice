@@ -74,7 +74,7 @@ public class _10451_PermutationCycle {
 
         while( !hasVisited[v] ) {
             hasVisited[v] = true;
-            goDfs( edgeArray[v], edgeArray, hasVisited );
+            v = edgeArray[v];
         }
     }
 }
