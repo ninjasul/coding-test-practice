@@ -86,14 +86,14 @@ public class _02178_Maze {
         }
 
         goBfs(1, 1, map);
-        System.out.println(map[n][m]-1);
+        System.out.println(map[n][m]);
     }
 
     public static void goBfs( int i, int j, int [][] map ) {
 
         Deque<Pos> deque = new ArrayDeque<Pos>();
         deque.addFirst( new Pos( j, i ) );
-        map[i][j]++;
+        //map[i][j]++;
 
         while( !deque.isEmpty() ) {
 
