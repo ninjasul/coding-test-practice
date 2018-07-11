@@ -1,4 +1,4 @@
-package _01.basic.dynamic;
+package _01.basic.dp;
 
 /*
 1로 만들기
