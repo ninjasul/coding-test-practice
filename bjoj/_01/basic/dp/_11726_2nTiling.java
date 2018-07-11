@@ -1,4 +1,4 @@
-package bjoj._01.basic.dp;
+package _01.basic.dp;
 
 import java.util.*;
 
