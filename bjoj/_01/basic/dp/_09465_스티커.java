@@ -50,37 +50,34 @@ public class _09465_스티커 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int testCnt = sc.nextInt();
-        //System.out.println( "testCnt: " + testCnt );
+        int testCnt = Integer.valueOf(sc.nextLine());
 
         for( int k = 0; k < testCnt; ++k ) {
-            //sc.nextLine();
-            int n = sc.nextInt();
-            //System.out.println( "n: " + n );
-            int[][] d = new int[2][n + 1];
+
+            int n = Integer.valueOf(sc.nextLine());
+
+            int[][] a = new int[n+1][2];
+            long[][] d = new long[n+1][3];
 
             for (int i = 0; i < 2; ++i) {
+                String [] line = sc.nextLine().split(" ");
                 for (int j = 1; j <= n; ++j) {
-                    d[i][j] = sc.nextInt();
-                    //System.out.print( d[i][j] + " " );
+                    a[j][i] = Integer.valueOf(line[j-1]);
                 }
-                //sc.nextLine();
-                //System.out.println();
-            }
-            //sc.nextLine();
-            //System.out.println();
-
-
-            long answer1 = 0, answer2 = 0;
-            for (int i = 1; i <= n - 2; ++i) {
-                answer1 += d[i % 2][i];
-                answer2 += d[(i+1)%2][i];
             }
 
-            answer1 += Math.max(d[(n+1)%2][n-1]+d[n%2][n], d[(n+1)%2][n]);
-            answer2 += Math.max(d[n%2][n-1]+d[(n+1)%2][n], d[n%2][n]);
+            for( int i = 1; i <= n; ++i ) {
+                d[i][0] = Math.max( d[i-1][0], Math.max(d[i-1][1], d[i-1][2]) );
+                d[i][1] = Math.max( d[i-1][0], d[i-1][2] ) + a[i][0];
+                d[i][2] = Math.max( d[i-1][0], d[i-1][1] ) + a[i][1];
 
-            System.out.println(Math.max(answer1, answer2));
+               /* System.out.println("d[" + i + "][0]: " + d[i][0]);
+                System.out.println("d[" + i + "][1]: " + d[i][1]);
+                System.out.println("d[" + i + "][2]: " + d[i][2]);*/
+            }
+
+            long answer = Math.max( d[n][0], Math.max(d[n][1], d[n][2]) );
+            System.out.println(answer);
         }
 
     }
