@@ -1,5 +1,7 @@
+/*
 package _01.basic.tree;
 
+*/
 /*
 트리의 지름
 
@@ -33,7 +35,8 @@ package _01.basic.tree;
 
 예제 출력 1
 11
-*/
+*//*
+
 
 import java.util.*;
 
@@ -110,4 +113,4 @@ public class _01167_TreeDiameter {
 
         return result;
     }
-}
+}*/
