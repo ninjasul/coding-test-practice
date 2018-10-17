@@ -35,7 +35,7 @@ V부터 방문된 점을 순서대로 출력하면 된다.
 
 import java.util.*;
 
-public class _01260_DFSBFS {
+public class _01260_DfsBfs {
     private static boolean [] hasVisited;
 
     public static void main(String[] args) {
