@@ -1,25 +1,22 @@
-package regular_expression;
+package hackerrank.regular_expression;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/*
-https://www.hackerrank.com/challenges/matching-anything-but-new-line/problem?h_r=next-challenge&h_v=zen
-*/
-public class _01_DotMatches {
+public class _02_DigitAndNonDigitCharacter {
 
     public static void main(String[] args) {
-        _01_DotMatches tester = new _01_DotMatches();
-        tester.checker("([^\\n]{3}\\.){3}[^\\n]{3}");
+        check("([\\d]{2}\\D){2}[\\d]{4}");
     }
 
-    public void checker(String pattern) {
+    public static void check(String pattern) {
         Scanner sc = new Scanner(System.in);
         String targetString = sc.nextLine();
-
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(targetString);
+
         System.out.println(m.matches());
     }
+
 }
