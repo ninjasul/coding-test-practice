@@ -53,9 +53,11 @@ public class _1074_Z {
         while (size > 1) {
             size >>= 1;
 
+            // 현재 위치를 (0,0) (0,1) (1,0) (1,1) 중 어디인지 파악
             rowPosition = (targetRow/size);
             colPosition = (targetCol/size);
 
+            // 현재 위치에 따라 방문 위치 누적 합계 구하기
             sum += (rowPosition * size * size) * 2 + colPosition * size * size;
 
             // 다음 좌표 값 구하기
